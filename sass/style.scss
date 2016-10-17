@@ -1,0 +1,81 @@
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/1a/04/33/1a043360ff9ef194449f0f1c8ab0d755.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.item:nth-child(2) {
+    
+    background-image: url("https://www.teamunify.com/lamv/_images/cust_bg_87_1399620442455.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.item:nth-child(3) {   
+    background-image: url("http://img0.es.gtsstatic.com/wallpapers/f35672227f292b9e3f72461809364b1b_large.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bio{
+    padding-top: 80%;
+}
+
+.navbar{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.carousel-caption{
+    padding-bottom: 20%;
+    h2{
+        font-size: 55px;
+        color: white;
+    }
+    p{
+        font-size: 40px;
+        color: black;
+    }
+}
